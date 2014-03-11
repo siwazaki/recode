@@ -68,15 +68,16 @@ class ApiController extends BaseController {
 
 
   public function postCommits() {
-    $userId = Input::get('userId');
+    $userId = Input::get('user_id');
     $authKey = Input::get('recode_auth_key');
+    $reposity_id = Input::get('repository_id');
     //TODO reconcile
 
-    
+
 
     var_dump(Input::all());
-    var_dump($userId);
-    var_dump($authKey);
+
+
   }
 
 }
