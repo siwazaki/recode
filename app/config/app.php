@@ -96,6 +96,7 @@ return array(
         'Illuminate\Workbench\WorkbenchServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Nefrock\NefrockServiceProvider',
+        'Recode\RecodeServiceProvider',
     ),
     /*
       |--------------------------------------------------------------------------
@@ -160,5 +161,8 @@ return array(
         'DbC' => 'Nefrock\Facade\DbC',
         'SU' => 'Nefrock\Facade\StringUtil',
         'DU' => 'Nefrock\Facade\DateUtil',
+        //Application Facades For Recode
+        'Stats' => 'Recode\Facade\Stats'
+
     ),
 );
