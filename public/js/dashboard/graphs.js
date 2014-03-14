@@ -1,155 +1,88 @@
 $(function() {
+  var today = new Date();
 
-    Morris.Area({
-        element: 'morris-area-chart',
-        data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
-        }, {
-            period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
-        }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
-        }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
-        }, {
-            period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
-        }, {
-            period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
-        }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
-        }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
-        }, {
-            period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
-        }, {
-            period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
-        }],
-        xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+  defaultMinDate = new Date(2014, today.getMonth() - 1, 1);
+  defaultMaxDate = new Date(2014, today.getMonth(), today.getDate());
+  var dateFrom = defaultMinDate.getFullYear() + "-" + (defaultMinDate.getMonth() + 1) + "-" + defaultMinDate.getDate();
+  var dateTo = defaultMaxDate.getFullYear() + "-" + (defaultMaxDate.getMonth() + 1) + "-" + defaultMaxDate.getDate();
+  updateGraphs(dateFrom, dateTo);
+
+  var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+  $('#date-slider').dateRangeSlider(
+          {
+            bounds: {
+              min: new Date(today.getFullYear() - 1, today.getMonth(), 1),
+              max: new Date(today.getFullYear(), today.getMonth(), today.getDate())
+            },
+            defaultValues: {
+              min: defaultMinDate,
+              max: defaultMaxDate
+            },
+            wheelMode: "scroll",
+            scales: [{
+                first: function(value) {
+                  return value;
+                },
+                end: function(value) {
+                  return value;
+                },
+                next: function(value) {
+                  var next = new Date(value);
+                  return new Date(next.setMonth(value.getMonth() + 1));
+                },
+                label: function(value) {
+                  return months[value.getMonth()];
+                }
+              }]
+          });
+
+  $("#date-slider").bind("valuesChanged", function(e, d) {
+    var dateFrom = new Date(d.values.min);
+    var dateTo = new Date(d.values.max);
+    var dateFromStr = dateFrom.getFullYear() + "-" + (dateFrom.getMonth() + 1) + "-" + dateFrom.getDate();
+    var dateToStr = dateTo.getFullYear() + "-" + (dateTo.getMonth() + 1) + "-" + dateTo.getDate();
+    updateGraphs(dateFromStr, dateToStr);
+  });
+
+
+
+});
+
+function updateGraphs(dateFromStr, dateToStr)
+{
+  var ps = "dateFrom=" + dateFromStr + "&dateTo=" + dateToStr;
+  $.ajax({
+    url: "/api/v1/commits?" + ps,
+    success: function(data) {
+      var xkey = data['xkey'];
+      var ykeys = data['ykeys'];
+      var labels = data['labels'];
+      var xs = data['xs'];
+      $("#commit-chart-wrapper").empty();
+      $("#commit-chart-wrapper").append('<div id="commit-chart"></div>');
+      Morris.Area({
+        element: 'commit-chart',
+        data: xs,
+        xkey: xkey,
+        ykeys: ykeys,
+        labels: labels,
         pointSize: 2,
         hideHover: 'auto',
         resize: true
-    });
-
-    Morris.Donut({
-        element: 'morris-donut-chart',
-        data: [{
-            label: "Download Sales",
-            value: 12
-        }, {
-            label: "In-Store Sales",
-            value: 30
-        }, {
-            label: "Mail-Order Sales",
-            value: 20
-        }],
-        resize: true
-    });
-
-    Morris.Bar({
-        element: 'morris-bar-chart',
-        data: [{
-            y: '2006',
-            a: 100,
-            b: 90
-        }, {
-            y: '2007',
-            a: 75,
-            b: 65
-        }, {
-            y: '2008',
-            a: 50,
-            b: 40
-        }, {
-            y: '2009',
-            a: 75,
-            b: 65
-        }, {
-            y: '2010',
-            a: 50,
-            b: 40
-        }, {
-            y: '2011',
-            a: 75,
-            b: 65
-        }, {
-            y: '2012',
-            a: 100,
-            b: 90
-        }],
-        xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
-        hideHover: 'auto',
-        resize: true
-    });
-
-    Morris.Line({
-        element: 'morris-line-chart',
-        data: [{
-            y: '2006',
-            a: 100,
-            b: 90
-        }, {
-            y: '2007',
-            a: 75,
-            b: 65
-        }, {
-            y: '2008',
-            a: 50,
-            b: 40
-        }, {
-            y: '2009',
-            a: 75,
-            b: 65
-        }, {
-            y: '2010',
-            a: 50,
-            b: 40
-        }, {
-            y: '2011',
-            a: 75,
-            b: 65
-        }, {
-            y: '2012',
-            a: 100,
-            b: 90
-        }],
-        xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
-        hideHover: 'auto',
-        resize: true
-    });
-
-});
+      });
+    }
+  });
+  $.ajax({
+    url: "/api/v1/stats?" + ps,
+    success: function(data) {
+      var a = data['ave'];
+      var v = data['var'];
+      var m = data['max'];
+      var s = data['sum'];
+      $('#s_val_ave').text(a);
+      $('#s_val_var').text(v);
+      $('#s_val_max').text(m);
+      $('#s_val_sum').text(s);
+    }
+  });
+}

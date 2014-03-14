@@ -1,6 +1,6 @@
 <?php
 
-namespace Nefrock\Facade;
+namespace Recode\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Facade;
  *
  * @author iwazaki
  */
-class StringUtil extends Facade {
+class Stats extends Facade {
 
   protected static function getFacadeAccessor() {
-    return 'string_util';
+    return 'stats';
   }
 
 }

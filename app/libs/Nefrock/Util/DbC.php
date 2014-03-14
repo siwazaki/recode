@@ -37,7 +37,7 @@ class DbC {
               (isset($dbg[1]['line']) ? "line    : " . $dbg[1]['line'] . PHP_EOL : "") .
               "message : " . $message;
       \Log::error($outputStr);
-      throw new ErrUsr($outputStr, $code3, null);
+      throw new ErrUsr($message, $code3, null);
     }
   }
 
@@ -67,7 +67,7 @@ class DbC {
               (isset($dbg[1]['line']) ? "line    : " . $dbg[1]['line'] . PHP_EOL : "") .
               "message : " . $message;
       \Log::error($outputStr);
-      throw new ErrPrg($outputStr, $code3, null);
+      throw new ErrPrg($message, $code3, null);
     }
   }
 

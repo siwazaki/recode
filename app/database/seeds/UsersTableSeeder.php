@@ -2,17 +2,13 @@
 
 class UsersTableSeeder extends Seeder {
 
-	public function run()
-	{
-		// Uncomment the below to wipe the table clean before populating
-		// DB::table('users')->truncate();
-
-		$users = array(
-
-		);
-
-		// Uncomment the below to run the seeder
-		// DB::table('users')->insert($users);
-	}
+  public function run() {
+    DB::table('users')->delete();
+    $records = array(
+        array('id' => 1, 'email' => 's.iwazaki@gmail.com', 'password' => Hash::make('neforck2013')),
+        array('id' => 2, 'email' => 'siwazaki@nefrock.com', 'password' => Hash::make('neforck2013')),
+    );
+    DB::table('users')->insert($records);
+  }
 
 }

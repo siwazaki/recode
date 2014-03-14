@@ -70,13 +70,12 @@ class ApiController extends BaseController {
   public function postCommits() {
     $userId = Input::get('user_id');
     $authKey = Input::get('recode_auth_key');
-    $reposity_id = Input::get('repository_id');
-    //TODO reconcile
-
-
-
-    var_dump(Input::all());
-
+    $repositoryId = Input::get('repository_id');
+    $repository = \Repository::findOrFail($repositoryId);
+    if(!is_null($repository))
+    {
+      \Commit::create(array('user_id'=> $userId, 'repository_id' => $repositoryId));
+    }
 
   }
 
