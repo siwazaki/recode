@@ -1,0 +1,367 @@
+iwazaki, 2014-02-25,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-25,ログイン・ログアウト機能の追加
+ttsurumi, 2014-02-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-24,repair custom css
+iwazaki, 2014-02-24,ユーザーモデルのpasswordをviewに返さないように修正
+iwazaki, 2014-02-24,マージミスを修正
+iwazaki, 2014-02-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-24,usersテーブルにプロファイル列を追加
+ttsurumi, 2014-02-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-24,repair ar view
+iwazaki, 2014-02-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-24,自動引当のロジックを追加
+ttsurumi, 2014-02-24,repair view for ar
+iwazaki, 2014-02-24,ShResultモデルを追加
+iwazaki, 2014-02-24,locationsテーブルに品質区分を追加
+iwazaki, 2014-02-24,changed .gitignore
+iwazaki, 2014-02-24,rm
+iwazaki, 2014-02-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-24,rm test results
+ttsurumi, 2014-02-24,impl sh_details
+ttsurumi, 2014-02-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-24,#431対応
+kixixixixi, 2014-02-23,fix btn layout
+ttsurumi, 2014-02-23,bug fix
+ttsurumi, 2014-02-23,bug fix
+ttsurumi, 2014-02-23,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-23,impl sh_header put post
+kixixixixi, 2014-02-22,fix navbar
+ttsurumi, 2014-02-22,iroiro
+ttsurumi, 2014-02-21,高速化！！！！！！！！！！！！！ ローカルで sudo touch /etc/exportsをお願いします。(そうしないとvagrant upができません)
+ttsurumi, 2014-02-21,add transition for sh_detail
+ttsurumi, 2014-02-21,add checkall
+ttsurumi, 2014-02-21,impl check all logic
+ttsurumi, 2014-02-21,bug fix
+ttsurumi, 2014-02-21,add sort logic to stocks forhoge
+ttsurumi, 2014-02-21,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-21,add sort tool box
+iwazaki, 2014-02-21,StockHistoryサービスのクエリで返すロジック項目の名前をいい感じになおした
+iwazaki, 2014-02-21,stockhitoryのクエリにロジック項目を返すよう変更
+ttsurumi, 2014-02-21,bug fix
+ttsurumi, 2014-02-21,add sort tool bar
+ttsurumi, 2014-02-21,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-21,impl  stock history
+iwazaki, 2014-02-21,コミット漏れ((((；ﾟДﾟ))))ｶﾞｸｶﾞｸﾌﾞﾙﾌﾞﾙ ＞引当つくりかけ。サービスレイヤのI/Fは固めた。 ＞テストのためシーダーを一部変更。
+iwazaki, 2014-02-21,引当つくりかけ。サービスレイヤのI/Fは固めた。 テストのためシーダーを一部変更。
+iwazaki, 2014-02-21,引当周りのフレームワークの実装
+ttsurumi, 2014-02-21,impl name converter
+ttsurumi, 2014-02-21,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-21,add stock history
+iwazaki, 2014-02-21,在庫のバッチアップデートを実装
+iwazaki, 2014-02-21,在庫変遷のクエリのコントローラーとのマップサンプル
+ttsurumi, 2014-02-21,??
+ttsurumi, 2014-02-21,add shdetails view
+iwazaki, 2014-02-20,在庫変遷のクエリを実装
+iwazaki, 2014-02-20,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-20,DBの定義を綺麗にした
+ttsurumi, 2014-02-20,impl shHeaderview
+ttsurumi, 2014-02-20,add dictionary toka   ./destroy.shを実行お願いします。。。。。。。
+iwazaki, 2014-02-19,出荷指示一覧、明細のクエリにColumnSort, ColumnFilterの機能を実装
+iwazaki, 2014-02-19,出荷指示(明細）のとりあえずの実装をShipmenetPlan::queryShDetails($sorts, $filters)に実装。検索、ソートはまだ効かない。
+iwazaki, 2014-02-19,sh_detailsテーブルの外部キー制約の変更
+iwazaki, 2014-02-19,ShDetailのシーダー追加
+iwazaki, 2014-02-19,queryShHeadersでShDetailの情報を付加しないよう変更
+iwazaki, 2014-02-19,出荷指示(一覧）のとりあえずの実装をShipmenetPlan::queryShHeaders($sorts, $filters)に実装。検索、ソートはまだ効かない。
+iwazaki, 2014-02-19,Migrationファイルのタイポを修正 配送業者周りのモデルを追加
+iwazaki, 2014-02-19,出荷周りのモデルの追加
+iwazaki, 2014-02-19,シードの追加
+iwazaki, 2014-02-19,出荷系のテーブル定義を変更
+iwazaki, 2014-02-19,出荷のサービスレイヤを追加
+iwazaki, 2014-02-19,StockChangeのシーダー変更
+iwazaki, 2014-02-19,カレンダービューの追加
+iwazaki, 2014-02-19,実績登録のサービスレイヤのバグ修正
+iwazaki, 2014-02-19,stock_changesのフィールド名ミスってたのを直した ArrivalConfirmationの実績登録時に、stock_changesにログを取るように変更
+iwazaki, 2014-02-19,在庫変遷情報テーブルの追加
+ttsurumi, 2014-02-18,add rename view
+ttsurumi, 2014-02-18,表示非表示画面の一部項目を非表示に
+ttsurumi, 2014-02-18,表示非表示画面の一部項目を非表示に
+ttsurumi, 2014-02-18,表示非表示設定画面を実装
+ttsurumi, 2014-02-17,在庫帳票との繋ぎこみ
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,more
+ttsurumi, 2014-02-17,ロジックとviewのつなぎ込み
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-17,bug fix
+iwazaki, 2014-02-17,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-17,ロジック算出の項目の名前を統一 在庫のロケーション別帳票出力機能の実装
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,bugfix?
+ttsurumi, 2014-02-17,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-17,bug fix
+iwazaki, 2014-02-17,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-17,ArResultsベースのクエリをArrivalHistoryに追加
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,hide print button
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,misutttta
+ttsurumi, 2014-02-17,bug fix ./destroy.shの実行をお願いします
+ttsurumi, 2014-02-17,bug fix
+ttsurumi, 2014-02-17,repair deploy tool
+ttsurumi, 2014-02-17,add prod config
+ttsurumi, 2014-02-17,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-17,add deploy tools
+iwazaki, 2014-02-17,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-17,サービスレイヤのリファクタ
+iwazaki, 2014-02-16,在庫の帳票プラグインのサービスレイヤのひな形作成
+iwazaki, 2014-02-16,在庫の帳票プラグインのひな形追加
+iwazaki, 2014-02-16,在関連のサービスレイヤを追加
+iwazaki, 2014-02-16,在庫の出荷期限日をクエリに追加
+iwazaki, 2014-02-16,NameConverterのユニットテストコード変更
+iwazaki, 2014-02-16,getDispColumnsをスコープクエリに変更
+ttsurumi, 2014-02-16,add sort tool
+ttsurumi, 2014-02-16,add sort tool
+ttsurumi, 2014-02-16,moromoro
+ttsurumi, 2014-02-16,merged
+ttsurumi, 2014-02-16,settingsページのangular化 To翔平君 settingsのviewをtemplates以下に移動しました。
+kixixixixi, 2014-02-16,add delivery_logo
+ttsurumi, 2014-02-16,repair layout
+ttsurumi, 2014-02-15,add order seeds    ./destroy.shの実行をお願いします
+ttsurumi, 2014-02-15,repair view convention
+iwazaki, 2014-02-15,NOTE: DBを作りなおして下さい(destory.shを叩いてね) 在庫情報変更ロジックの追加
+iwazaki, 2014-02-15,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-15,SStockサービスのクエリ追加
+ttsurumi, 2014-02-14,add dictionary entry
+iwazaki, 2014-02-14,Stockサービスの名前を変更
+iwazaki, 2014-02-14,在庫テーブルに、在庫出荷期限日の追加(stock_sh_expiration_date)
+iwazaki, 2014-02-14,外部キーつけ忘れ
+iwazaki, 2014-02-14,stock_modifiesテーブルのカラム名を変更 stock_modifiesの外部キーを生sqlで作成するように変更
+iwazaki, 2014-02-14,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-14,シードの追加
+ttsurumi, 2014-02-14,bug fix
+ttsurumi, 2014-02-14,add stock quantity view
+ttsurumi, 2014-02-14,impl stock modify
+ttsurumi, 2014-02-14,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-14,add stock modify view and model ./destroy.shを実行して下さい
+kixixixixi, 2014-02-13,add content-menu-tab
+kixixixixi, 2014-02-13,add other_settings page
+kixixixixi, 2014-02-13,add display_element_rename page
+kixixixixi, 2014-02-13,add display_element_select page
+kixixixixi, 2014-02-13,fix url and controller at settings
+iwazaki, 2014-02-12,pdfライブラリの修正コミット漏れ
+kixixixixi, 2014-02-12,add delivery_settings of sagawa and jp page
+iwazaki, 2014-02-11,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-11,実績リストのページインデックスの修正
+kixixixixi, 2014-02-11,fix
+kixixixixi, 2014-02-11,init setting_delivery_sagawa
+ttsurumi, 2014-02-10,bug fix
+ttsurumi, 2014-02-10,bug fix
+iwazaki, 2014-02-10,実績リストのダウンロード機能のViewとServiceの結合
+iwazaki, 2014-02-10,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-10,実績リスト、実績最リストを生成するプラグインの作成
+ttsurumi, 2014-02-10,bishuusei
+ttsurumi, 2014-02-10,add tables
+ttsurumi, 2014-02-10,add tables
+ttsurumi, 2014-02-10,add sh models
+ttsurumi, 2014-02-10,add view
+ttsurumi, 2014-02-10,repair stock view
+ttsurumi, 2014-02-09,historyからのpdf繋ぎを実装
+ttsurumi, 2014-02-09,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-09,add ロケ別在庫一覧view
+iwazaki, 2014-02-09,実績リストのPDF出力インターフェースを追加
+iwazaki, 2014-02-09,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-09,Stockサービスのエイリアスが、モデルのStockと被ったのでとりあえず変更しておく。 Stock => StockThisIsTmpName
+ttsurumi, 2014-02-09,add zaiko view
+ttsurumi, 2014-02-09,choi naosita
+ttsurumi, 2014-02-09,drop tuika
+ttsurumi, 2014-02-09,DB定義とかを諸々修正 ./destroy.shを実行オナシャス
+iwazaki, 2014-02-08,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-08,【注意】php composer.phar dump-autoloadを実行して下さい Pdfまわりのフレームワークのコードの整理
+iwazaki, 2014-02-08,【注意】php composer.phar dump-autoloadを実行して下さい Pdfまわりのフレームワークのコードの整理
+ttsurumi, 2014-02-08,stocktakingを追加 destroy.sを実行してくださいいいいいいい
+ttsurumi, 2014-02-08,stocksを追加
+kixixixixi, 2014-02-08,create accout page
+ttsurumi, 2014-02-07,moromoro
+ttsurumi, 2014-02-07,add sh view
+iwazaki, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-06,ColumnFilterの日本語対応
+ttsurumi, 2014-02-06,bug fix
+ttsurumi, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-06,bug fix
+iwazaki, 2014-02-06,ArResultのプットの修正、まだ動かない
+ttsurumi, 2014-02-06,putArresultに投げるよう修正
+ttsurumi, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-06,hoge
+iwazaki, 2014-02-06,ColumnFilterのorWhereの結合順序をグループ化した
+iwazaki, 2014-02-06,putArresultとサービスをつないだ
+iwazaki, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-06,ArResultを返すqueryをArrivalConfirmationについか
+ttsurumi, 2014-02-06,実績明細の更新I/Fを追加
+ttsurumi, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-06,add stock views
+iwazaki, 2014-02-06,リファクタ
+iwazaki, 2014-02-06,コミット漏れ）ArDetailのput, deleteの場合のArHeaderの変更 DBを作りなおして下さい。
+iwazaki, 2014-02-06,ArDetailのput, deleteの場合のArHeaderの変更に対応
+iwazaki, 2014-02-06,検品が明細に対して複数ある場合に対応
+iwazaki, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-06,ユニットテストが通るように変更
+ttsurumi, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-06,add search params
+iwazaki, 2014-02-06,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-06,入荷実績の確定ロジック実装
+ttsurumi, 2014-02-06,bug fix
+ttsurumi, 2014-02-06,トップからの遷移を追加
+ttsurumi, 2014-02-06,postArresultsへの繋ぎ確認
+ttsurumi, 2014-02-06,入荷実績の実績確定の繋ぎ実装
+iwazaki, 2014-02-05,ArrivalConfirmationサービスのAPIを変更
+ttsurumi, 2014-02-05,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-05,moromoro
+iwazaki, 2014-02-05,実績の一覧画面でArrivalConfirmationサービスを呼ぶように変更
+iwazaki, 2014-02-05,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-05,ステータスと表示項目の関係を改善
+ttsurumi, 2014-02-05,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-05,repair views
+iwazaki, 2014-02-05,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-05,【機能追加】検品結果登録 【バグ修正】ArResultのNo
+ttsurumi, 2014-02-05,入荷履歴明細画面を修正
+ttsurumi, 2014-02-05,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-05,実績明細画面から実績確定ボタンを削除
+iwazaki, 2014-02-05,デバッグコードを削除
+iwazaki, 2014-02-05,getArInspectionsのqueryの呼び方を変更
+iwazaki, 2014-02-05,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-05,fuge
+iwazaki, 2014-02-05,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-02-05,リファクタ
+ttsurumi, 2014-02-05,hoge
+ttsurumi, 2014-02-05,bug fix
+iwazaki, 2014-02-05,ArInspetion::query()メソッドの引数にFilterとSortを追加
+iwazaki, 2014-02-05,検品のapplyロジックの変更
+ttsurumi, 2014-02-05,hidsとdidsの繋ぎを実装
+ttsurumi, 2014-02-05,検品結果一括登録へ遷移の際にhids[] (ヘッダーからの遷移の場合) とdids[](明細からの遷移の場合)をクエリに追加するよう修正
+ttsurumi, 2014-02-05,bug fix
+ttsurumi, 2014-02-05,remove ApiController from route
+kixixixixi, 2014-02-05,add register account page
+iwazaki, 2014-02-04,ColumnFilterのメソッド名の変更
+iwazaki, 2014-02-04,入荷のヘッダー、明細のpostを追加
+iwazaki, 2014-02-04,入荷のヘッダー、明細のpostを追加
+iwazaki, 2014-02-04,入荷のヘッダー、明細のpostを追加
+ttsurumi, 2014-02-04,ApiControllerをapp/controllers/ArrivalConfirmationServiceApiController.php app/controllers/ArrivalHistoryServiceApiController.php app/controllers/ArrivalInspectionServiceApiController.php app/controllers/ArrivalServiceApiController.phpに分割
+iwazaki, 2014-02-04,ArrivalHistoryをユニットテストが通るように変更
+ttsurumi, 2014-02-04,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-04,add arhistorydetails view
+iwazaki, 2014-02-04,[機能追加] ArrivalHistoryサービスの追加 [リファクタ]テストメソッドの名前の変更
+iwazaki, 2014-02-04,SeqNoサービスの追加、ArResultのテーブル定義を変更 次のコマンドを実行して下さい。 php artisan migrate:refresh php artisan db:seed --env=local
+iwazaki, 2014-02-04,サービス名をSeqNumberからSeqNoに変更 モデルをSeqNumberとして追加
+iwazaki, 2014-02-04,再コミット：採番用テーブル作成。 注意：migrate & seed を実行して下さい。 php artisan migrate php artisan db:seed --env=local
+iwazaki, 2014-02-04,採番用テーブル作成。 注意：migrate & seed を実行して下さい。 php artisan migrate php artisan db:seed --env=local
+iwazaki, 2014-02-04,採番用のサービスの追加
+iwazaki, 2014-02-04,artisanコマンドの追加 php artisan w3:thiken-db
+ttsurumi, 2014-02-04,add arResultDetails view
+ttsurumi, 2014-02-03,add arresultdetails view
+ttsurumi, 2014-02-03,repair arrresults view
+ttsurumi, 2014-02-03,add results view
+ttsurumi, 2014-02-03,impl inspection view
+ttsurumi, 2014-02-03,add nbproject to gitignore
+ttsurumi, 2014-02-03,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-02-03,bug fix
+siwazaki, 2014-02-02,実績のクエリの変更
+siwazaki, 2014-02-02,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+siwazaki, 2014-02-02,クエリの変更
+ttsurumi, 2014-02-02,bug fix
+ttsurumi, 2014-02-02,new の表示を修正
+ttsurumi, 2014-02-02,bug fix
+ttsurumi, 2014-02-02,detail画面を修正
+ttsurumi, 2014-01-31,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-01-31,Arrivalの結合テーブルを追加
+iwazaki, 2014-01-31,php artisan コマンドのひな形作成
+ttsurumi, 2014-01-31,一覧画面を修正
+iwazaki, 2014-01-31,実績登録のqueryを実装。まだステータスとかは見ていない。
+iwazaki, 2014-01-31,ミスった〜
+iwazaki, 2014-01-31,フィルターとソートをちゃんと実装したよ〜
+iwazaki, 2014-01-31,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-31,ArrivalConfirmationサービスの追加 InspectionサービスをArriavalInspectionにリネーム
+ttsurumi, 2014-01-31,add swp file to gitignore
+ttsurumi, 2014-01-31,remove swap file
+kixixixixi, 2014-01-31,init login page
+iwazaki, 2014-01-31,ArrivalのArHeaderの検索クエリのjoin条件を変更
+ttsurumi, 2014-01-31,add seeds
+ttsurumi, 2014-01-31,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-30,ArHeaderのサーチクエリの中にar_details_countを追加
+ttsurumi, 2014-01-30,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-30,Arrival変更
+iwazaki, 2014-01-30,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-30,Arrival変更
+iwazaki, 2014-01-30,Arrivalのqueryの変更
+ttsurumi, 2014-01-30,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-01-30,add words to dictionary
+ttsurumi, 2014-01-29,repair dictionaries format
+iwazaki, 2014-01-29,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-29,Arrivalのqueryメソッドの候補
+ttsurumi, 2014-01-29,replace hard coded label name
+ttsurumi, 2014-01-29,kremo
+ttsurumi, 2014-01-29,migrationを変更しました。DB変更お願いします
+ttsurumi, 2014-01-29,add ar_headers ar_details ar_results to dictionary
+ttsurumi, 2014-01-29,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-01-29,repair detail view
+iwazaki, 2014-01-29,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-29,queryArDetailsの追加
+ttsurumi, 2014-01-29,repair variable name status to _status
+ttsurumi, 2014-01-29,merged
+ttsurumi, 2014-01-29,hoge
+iwazaki, 2014-01-29,ArHeaderのgetを変更
+ttsurumi, 2014-01-28,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-01-28,databaseを作りなおしておくんなまし。。
+iwazaki, 2014-01-28,Inspectionの変更
+ttsurumi, 2014-01-28,repair arheader view
+ttsurumi, 2014-01-28,merged
+iwazaki, 2014-01-27,Inspectionサービスに検品一括登録処理を追加
+iwazaki, 2014-01-27,商品系のマスタの追加。 DBの初期化よろしくお願いします。 これで入荷系は一段落した。 人生ｵﾜﾀ＼(^o^)／
+iwazaki, 2014-01-27,商品系マスタの追加。DBを作りなおして下さい。
+iwazaki, 2014-01-27,ArHeaderの外部キーにOwnerを追加 DBを作りなおして下さい
+ttsurumi, 2014-01-27,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-01-27,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-27,ar_detailsのシードを追加
+iwazaki, 2014-01-27,ar_detail_inspection_processesテーブルののシードを追加
+iwazaki, 2014-01-27,ar_detail_inspection_processesテーブルの追加
+ttsurumi, 2014-01-27,hoge
+iwazaki, 2014-01-27,シードを下のように書くと、トランザクション系のシードデータも入れるようにした php artisan db:seed --env=local
+iwazaki, 2014-01-27,シードの追加
+iwazaki, 2014-01-27,集荷系のマスターデータのシードを追加
+iwazaki, 2014-01-27,集荷系のマスターデータのシードを追加
+ttsurumi, 2014-01-26,データベースのテーブル定義を追加＆変更 もう一回db作りなおしてください
+iwazaki, 2014-01-26,データベースのテーブル定義を追加＆変更
+iwazaki, 2014-01-26,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-26,データベースのテーブル定義を追加＆変更
+ttsurumi, 2014-01-25,add arinspections if
+ttsurumi, 2014-01-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-01-24,add ar_inspections
+iwazaki, 2014-01-24,Added name converter test
+iwazaki, 2014-01-24,Added name converter
+ttsurumi, 2014-01-24,add phpunit
+ttsurumi, 2014-01-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+ttsurumi, 2014-01-24,hoge
+iwazaki, 2014-01-24,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-24,Added Libs
+ttsurumi, 2014-01-24,bug fix
+ttsurumi, 2014-01-24,add routing
+iwazaki, 2014-01-23,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-23,Added Application Service Facade Layer
+iwazaki, 2014-01-23,Added Application Service Facade Layer
+ttsurumi, 2014-01-23,moromoro
+ttsurumi, 2014-01-23,fuge
+ttsurumi, 2014-01-23,hoge
+ttsurumi, 2014-01-21,moromoro
+ttsurumi, 2014-01-19,入荷一覧画面の諸々実装
+ttsurumi, 2014-01-18,ummm
+ttsurumi, 2014-01-18,connect service
+ttsurumi, 2014-01-18,gomisakujo
+ttsurumi, 2014-01-18,angular組み込み
+ttsurumi, 2014-01-17,moromoro
+ttsurumi, 2014-01-17,iroiro
+ttsurumi, 2014-01-17,repair gitignore
+ttsurumi, 2014-01-17,add view
+ttsurumi, 2014-01-16,add top view
+ttsurumi, 2014-01-15,repair cookbook
+ttsurumi, 2014-01-15,repair .htaccess
+iwazaki, 2014-01-14,Merge branch 'master' of ssh://nanka/var/git/repos/w3package
+iwazaki, 2014-01-14,Added mv
+ttsurumi, 2014-01-14,add html
+iwazaki, 2014-01-13,Added a facade for generating models
+ttsurumi, 2014-01-10,add database
+ttsurumi, 2014-01-10,initial revision
